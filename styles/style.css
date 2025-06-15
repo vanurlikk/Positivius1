@@ -1,5 +1,5 @@
 
-a, p, h1, h2, h3, h4, button, label {
+a, p, h1, h2, h3, h4, button, label, li {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -70,6 +70,7 @@ nav {
     padding: 20px;
     background-color: #fff;
     font-size: 20px;
+    color: #000;
 }
 
 header {
@@ -82,10 +83,17 @@ header {
 .header-info {
     display: flex;
     flex-direction: row;
+    gap: auto;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap:35px;
 }
 
-.header-text>button {
+button {
     border-radius: 14px;
     padding: 20px;
     background-color: #191A23;
@@ -105,7 +113,7 @@ header {
 
 .cards {
     padding: 0 100px 0 100px;
-    margin-top: 140px;
+    margin-top: 80px;
 }
 
 section {
@@ -263,6 +271,16 @@ section {
 
 .step-append {
     border-top: 1px solid #000;
+    padding-top: 30px;
+}
+
+.team {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 100px 0 100px;
 }
 
 .person {
@@ -273,7 +291,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    max-width: 315px;
+    position: relative;
 }
 .name-img {
     display: flex;
@@ -289,6 +308,212 @@ section {
     padding-bottom: 28px;
 }
 
+.person-block-top>img {
+    position: absolute;
+    align-items: flex-start;
+    right: 35px;
+}
+
 #name {
     font-weight: 800;
+}
+
+.team-btn {
+    width: 228px;
+    padding: 20px 35px 20px 35px;
+}
+
+.team-btn-block {
+    padding: 0 100px 0 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.Testimonials-img {
+    padding: 0 100px 0 100px;
+    margin-top: 80px;
+}
+
+.contact-block {
+    padding: 0 100px 0 100px;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 100px 80px 100px;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    margin-top: 80px;
+}
+
+.contact img {
+    position: absolute;
+    right: -220px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 556px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio label input[type="radio"] {
+    color: #B9FF66;
+    background-color: #B9FF66;
+    width: 20px;
+}
+
+.message {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 18px 30px 18px 30px;
+    border-radius: 14px;
+    border: 1px solid #191A23;
+}
+
+textarea {
+    height: 190px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+footer {
+    padding: 55px 60px 50px 60px;
+    margin: 140px 100px 0 100px;
+    background-color: #000;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+    padding: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    color: #fff;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 154px;
+    align-items: center;
+    flex-wrap: nowrap
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h4 {
+    background-color: #B9FF66;
+    border-radius: 7px;
+    padding: 7px;
+    width: fit-content;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+}
+
+.info-list li {
+    color: #fff;
+    list-style: none;
+}
+
+.footer-form {
+    background-color: #191A23;
+    border-radius: 14px;
+    padding: 58px 40px 58px 40px;
+    gap: 20px;
+    height: fit-content;
+    width: fit-content;
+    width: 554px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 67px;
+}
+
+.footer-form form input {
+    width: 285px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-form form button {
+    width: 249px;
+    background-color: #B9FF66;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 40px;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.Testimonials-img img {
+    width: 1240px;
 }
